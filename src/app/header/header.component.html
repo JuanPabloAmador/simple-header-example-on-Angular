@@ -1,0 +1,22 @@
+<div class="header-container">
+    <header>
+        <nav class="navigation">
+            <a href="" class="outline"><img src="/assets/logo.svg" alt="Logo"></a>
+            <button type="button" [attr.aria-expanded]="isMobileMenuOpen" aria-controls="main-manu"
+                (click)="toggleMobileMenu()" class="menu-btn gradient">Menu
+                <div class="line-block">
+                    <span class="line line--1"></span>
+                    <span class="line line--2"></span>
+                    <span class="line line--3"></span>
+                </div>
+            </button>
+            <ul class="menu-list" id="main-menu" [class.hide-menu]="!isMobileMenuOpen">
+                @for(item of menuList; track item.text){
+                <li>
+                    <a href="{{item.link}}">{{item.text}}</a>
+                </li>
+                }
+            </ul>
+        </nav>
+    </header>
+</div>

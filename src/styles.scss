@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+// START RESET
+body,
+button,
+input[type="submit"],
+input[type="reset"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    outline: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+// END RESET
+
+* {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+
+    :focus {
+        outline: 2px solid var(--primary);
+        outline-offset: 5px;
+    }
+
+}
+
+:root {
+    // colors
+    --primary-bg: #212529;
+    --primary: #E3B505;
+    --secondary: #FF715B;
+    --tertiary: #124E78;
+    --white: #EEEEEE;
+
+    // breakpoint
+    --bp-xs: 0px;
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
+    --bp-xl: 1200px;
+    --bp-xxl: 1400px;
+}
